@@ -25,3 +25,7 @@ cat repolist |
 RED='\033[0;31m'
 NC='\033[0m'
         echo -e "${RED}Other executable files found are${NC}"
+        find . -type f -executable -print
+        echo "Scan Endtime is `date`"
+        duration=$SECONDS
+        echo "$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed."
