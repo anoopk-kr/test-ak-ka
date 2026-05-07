@@ -4,7 +4,7 @@ SECONDS=0
 
 OLDIFS=$IFS
 
-
+kasl
 #IFS=''   
 cat repolist |	
 	while read i
